@@ -60,6 +60,9 @@ section {
     overflow: hidden;
 }
 
+.service img:hover, .photo img:hover {
+    transform: scale(1.1);
+
 .service img, .photo img {
     width: 100%;
     height: 200px;
