@@ -69,14 +69,14 @@ section {
 }
 
 /* Speaker Section */
-.speakers {
+.speakers, .gallery {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.speaker {
+.speaker, .photo {
     background-color: #fff;
     padding: 15px;
     width: 300px;
@@ -84,7 +84,7 @@ section {
     box-shadow: 2px 2px 38px -8px rgba(0,0,0,0.78);
 }
 
-.speaker img {
+.speaker img, .photo img {
     width: 100%;
     height: 200px;
     object-fit: cover;
