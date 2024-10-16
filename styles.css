@@ -100,6 +100,12 @@ footer {
     margin-top: 20px;
 }
     /* Responsive */
+@media (max-width: 1024px) {
+    .service, .photo {
+        width: 45%; /* 2 items in a row */
+    }
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
@@ -128,5 +134,18 @@ footer {
     
     .service, .speaker, .photo {
         width: 95%;
+    }
+}
+
+/* Additional Media Queries for 3x3 Grid in Gallery */
+@media (min-width: 480px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+        gap: 20px; /* Space between grid items */
+    }
+
+    .photo {
+        width: auto; /* Let the grid control the width */
     }
 }
